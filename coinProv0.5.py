@@ -65,6 +65,7 @@ class MainWindow(QMainWindow,form_class):#슬롯 클래스
         self.cvt.coinDataSent.connect(self.fillCoindata)
         self.cvt.start()#시그널 함수의 쓰레드를 시작
 
+
         #시그널 클래스에서 보내준 코인정보를 ui에 출력해주는 슬롯함수
     def fillCoindata(self,trade_price,signed_change_rate,acc_trade_price_24h,
                       acc_trade_volume_24h,high_price,low_price,prev_closing_price,trade_volume ):
